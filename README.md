@@ -1,7 +1,7 @@
 # lukonin_platform
 lukonin Platform repository
 
-# Выполнено ДЗ №
+# Выполнено ДЗ №1
 
  - [ ] Основное ДЗ
 
