@@ -13,6 +13,12 @@ spec:
   containers:
   - name: web
     image: lukonin/otus-web:v1.0
+    readinessProbe:
+      httpGet:
+        path: /index.html
+        port: 80
+    livenessProbe:
+      tcpSocket: { port: 8000 }
     volumeMounts:
     - name: app
       mountPath: /app
