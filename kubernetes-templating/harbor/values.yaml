@@ -1,0 +1,12 @@
+expose:
+  ingress:
+    hosts:
+      core: otus-harbor.109.173.124.189.nip.io
+    annotations:
+      kubernetes.io/ingress.class: nginx
+      kubernetes.io/tls-acme: "true"
+      cert-manager.io/cluster-issuer: "letsencrypt"
+      cert-manager.io/acme-challenge-type: http01
+
+notary:
+  enabled: false
